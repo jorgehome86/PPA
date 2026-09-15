@@ -1,0 +1,10 @@
+{
+  "name": "PPA ANAC 95+",
+  "short_name": "PPA 95+",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#eef3f8",
+  "theme_color": "#071a2f",
+  "lang": "pt-PT",
+  "description": "Treinador offline de preparação para PPA ANAC."
+}
