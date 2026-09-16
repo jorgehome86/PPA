@@ -1,11 +1,12 @@
-# PPA ANAC 95+ — V12 Aberta
+# PPA ANAC 95+ — VERSÃO COMPLETA
 
-Versão simplificada: a aplicação abre diretamente, sem nome de utilizador, palavra-passe ou ecrã de login.
+Inclui: mapa de matérias/capítulos, conteúdo de estudo, esquemas visuais offline, leitura em voz alta offline, pesquisa de vídeos online, 50 memorização + 50 validação, regra 95%+, progressão por capítulo, caderno de erros, cálculos desbloqueáveis por matéria (estrutura), simulados, modo reta final, calendário, export/import, PWA offline e sincronização Supabase.
 
-- Progresso local no dispositivo (modo guest).
-- Funciona offline depois de carregada/cached.
-- O conteúdo de estudo e os bancos de perguntas permanecem na aplicação.
-- A autenticação/Supabase não é necessária para utilizar a aplicação.
-- Esta versão não oferece separação de resultados por conta nem sincronização cloud.
+## Importante
+O banco incorporado contém 1.240 questões de treino fornecidas no projeto (1.000 normais + 240 cálculos). Elas não são questões oficiais da ANAC. A fonte/explicação é mantida quando existente.
 
-Substitua os ficheiros existentes no GitHub Pages por este pacote e faça um único commit na branch `main`.
+## Cloud
+O frontend usa a publishable key do Supabase. A secret/service key permanece apenas na Edge Function. Publique `supabase/functions/login-with-username/index.ts` como a função `login-with-username` e mantenha JWT verification desligada se a função for pública e fizer a própria autenticação.
+
+## GitHub Pages
+Suba o conteúdo da pasta para a raiz do repositório `jorgehome86/PPA`, branch `main`.

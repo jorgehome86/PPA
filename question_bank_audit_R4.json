@@ -1,0 +1,17 @@
+{
+  "version": "R4",
+  "generated_source_grounded_concept_questions": 6200,
+  "chapters_with_50_memory_and_50_validation": 62,
+  "by_subject": {
+    "Regulamentação": 1400,
+    "Navegação": 1000,
+    "Conhecimentos Técnicos": 1800,
+    "Meteorologia": 900,
+    "Teoria de Voo": 1100
+  },
+  "limitations": [
+    "Estas questões novas testam memorização/classificação do mapa conceitual dos capítulos; não substituem questões substantivas ANAC baseadas no texto integral.",
+    "Capítulos cujo resumo disponível era genérico/insuficiente não receberam geração automática.",
+    "Questões antigas permanecem disponíveis para treino e cálculos."
+  ]
+}

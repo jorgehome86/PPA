@@ -1,0 +1,21 @@
+{
+  "version": "MAX-R2",
+  "total_questions": 1240,
+  "by_subject": {
+    "Regulamentação": 200,
+    "Navegação": 260,
+    "Conhecimentos Técnicos": 260,
+    "Meteorologia": 260,
+    "Teoria de Voo": 260
+  },
+  "by_bank": {
+    "normal": 1000,
+    "calculation": 240
+  },
+  "chapter_zero_or_missing": 1240,
+  "exact_normalized_text_duplicates": 960,
+  "notes": [
+    "MAX-R2 no longer cycles the same question to fake a 50-question chapter bank.",
+    "Questions without a reliable chapter are inferred at runtime from the existing chapter descriptors; full manual/source-grounded classification remains pending."
+  ]
+}

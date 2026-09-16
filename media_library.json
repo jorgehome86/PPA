@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "sources": [
+    {"type":"official","title":"FAA Aviation Handbooks & Manuals","url":"https://www.faa.gov/regulations_policies/handbooks_manuals/aviation","subjects":["CT","MET","NAV","TV"]},
+    {"type":"official","title":"FAA Aviation Weather Handbook — FAA-H-8083-28B","url":"https://www.faa.gov/regulationspolicies/handbooksmanuals/aviation/faa-h-8083-28b-aviation-weather-handbook","subjects":["MET"]},
+    {"type":"official","title":"FAA Pilot's Handbook of Aeronautical Knowledge","url":"https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/phak","subjects":["CT","MET","NAV","TV"]},
+    {"type":"official","title":"FAA Airplane Flying Handbook","url":"https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/airplane_handbook","subjects":["TV","CT"]},
+    {"type":"official","title":"Aviation Weather Center","url":"https://aviationweather.gov/","subjects":["MET"]},
+    {"type":"official","title":"WMO IWXXM","url":"https://wmo.int/iwxxm","subjects":["MET"]},
+    {"type":"official","title":"WIFS / OPMET User Guide","url":"https://aviationweather.gov/wifs/users_guide/","subjects":["MET"]}
+  ],
+  "imagePolicy":"Use official/public educational diagrams or locally generated explanatory diagrams. Do not copy copyrighted media into the app when a link/thumbnail is sufficient.",
+  "videoPolicy":"Search by chapter and show external videos; verify relevance before adding a permanent resource.",
+  "audioPolicy":"Use browser SpeechSynthesis for chapter summaries and question explanations so core audio works offline. External audio remains online-only."
+}

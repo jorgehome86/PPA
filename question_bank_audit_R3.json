@@ -1,0 +1,43 @@
+{
+  "version": "MAX-R3",
+  "total_records": 1240,
+  "unique_text_questions": 280,
+  "duplicates_detected": 960,
+  "by_subject": {
+    "Conhecimentos Técnicos": {
+      "records": 260,
+      "unique": 65,
+      "duplicates": 195,
+      "normal_unique": 60,
+      "calculation_unique": 5
+    },
+    "Meteorologia": {
+      "records": 260,
+      "unique": 65,
+      "duplicates": 195,
+      "normal_unique": 60,
+      "calculation_unique": 5
+    },
+    "Navegação": {
+      "records": 260,
+      "unique": 65,
+      "duplicates": 195,
+      "normal_unique": 60,
+      "calculation_unique": 5
+    },
+    "Regulamentação": {
+      "records": 200,
+      "unique": 20,
+      "duplicates": 180,
+      "normal_unique": 20,
+      "calculation_unique": 0
+    },
+    "Teoria de Voo": {
+      "records": 260,
+      "unique": 65,
+      "duplicates": 195,
+      "normal_unique": 60,
+      "calculation_unique": 5
+    }
+  }
+}

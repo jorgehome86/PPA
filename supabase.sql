@@ -1,24 +1,23 @@
--- PPA ANAC 95+ V7 — encrypted offline-first cloud backup
--- The application encrypts each user's progress in the browser before upload.
--- The table does not contain passwords. cloud_id is a random per-account secret identifier.
-create table if not exists public.ppa_user_sync (
-  cloud_id text primary key,
-  payload text not null,
-  updated_at timestamptz not null default now()
-);
-
-alter table public.ppa_user_sync enable row level security;
-
--- The PWA uses an unpredictable cloud_id and client-side AES-GCM encryption.
--- This policy is intentionally minimal for the anonymous PWA endpoint.
--- For a production deployment with stronger account security, replace this layer
--- with Supabase Auth + server-side username mapping / Edge Functions.
-create policy "ppa anon insert" on public.ppa_user_sync
-  for insert to anon with check (length(cloud_id) >= 32 and length(payload) > 20);
-
-create policy "ppa anon select" on public.ppa_user_sync
-  for select to anon using (length(cloud_id) >= 32);
-
-create policy "ppa anon update" on public.ppa_user_sync
-  for update to anon using (length(cloud_id) >= 32)
-  with check (length(cloud_id) >= 32 and length(payload) > 20);
+-- PPA ANAC 95+ — schema completo de conta e sincronização
+create extension if not exists pgcrypto;
+create table if not exists public.profiles (id uuid primary key references auth.users(id) on delete cascade, username text not null, display_name text, email text, created_at timestamptz default now(), updated_at timestamptz default now());
+create unique index if not exists profiles_username_lower_idx on public.profiles(lower(username));
+create table if not exists public.student_progress (id uuid primary key default gen_random_uuid(), user_id uuid not null references auth.users(id) on delete cascade, subject text not null, chapter text not null, review_score int, memory_score int, validation_score int, mastered boolean default false, updated_at timestamptz default now(), unique(user_id,subject,chapter));
+create table if not exists public.student_answers (id uuid primary key default gen_random_uuid(), user_id uuid not null references auth.users(id) on delete cascade, client_key text not null, question_id text, subject text, chapter text, phase text, correct boolean, answered_at timestamptz default now(), unique(user_id,client_key));
+create table if not exists public.student_errors (id uuid primary key default gen_random_uuid(), user_id uuid not null references auth.users(id) on delete cascade, client_key text not null, question_id text, subject text, chapter text, question_text text, correct_answer text, explanation text, created_at timestamptz default now(), unique(user_id,client_key));
+create table if not exists public.student_simulations (id uuid primary key default gen_random_uuid(), user_id uuid not null references auth.users(id) on delete cascade, client_key text not null, score int, percentage int, created_at timestamptz default now(), unique(user_id,client_key));
+create table if not exists public.sync_state (user_id uuid primary key references auth.users(id) on delete cascade, last_sync timestamptz default now());
+create table if not exists public.user_devices (id uuid primary key default gen_random_uuid(), user_id uuid not null references auth.users(id) on delete cascade, device_label text, authorized_at timestamptz default now(), last_seen_at timestamptz default now());
+create or replace function public.handle_new_user() returns trigger language plpgsql security definer set search_path=public as $$ begin insert into public.profiles(id,username,display_name,email) values(new.id,coalesce(new.raw_user_meta_data->>'username',split_part(new.email,'@',1)),coalesce(new.raw_user_meta_data->>'display_name',new.raw_user_meta_data->>'username'),new.email) on conflict(id) do update set email=excluded.email,username=excluded.username,display_name=excluded.display_name,updated_at=now(); return new; end; $$;
+drop trigger if exists on_auth_user_created on auth.users; create trigger on_auth_user_created after insert on auth.users for each row execute procedure public.handle_new_user();
+create or replace function public.sync_profile_email() returns trigger language plpgsql security definer set search_path=public as $$ begin update public.profiles set email=new.email,updated_at=now() where id=new.id; return new; end; $$;
+drop trigger if exists on_auth_user_email_changed on auth.users; create trigger on_auth_user_email_changed after update of email on auth.users for each row execute procedure public.sync_profile_email();
+-- RLS
+alter table public.profiles enable row level security; alter table public.student_progress enable row level security; alter table public.student_answers enable row level security; alter table public.student_errors enable row level security; alter table public.student_simulations enable row level security; alter table public.sync_state enable row level security; alter table public.user_devices enable row level security;
+drop policy if exists profiles_own on public.profiles; create policy profiles_own on public.profiles for select using(auth.uid()=id);
+drop policy if exists progress_own on public.student_progress; create policy progress_own on public.student_progress for all using(auth.uid()=user_id) with check(auth.uid()=user_id);
+drop policy if exists answers_own on public.student_answers; create policy answers_own on public.student_answers for all using(auth.uid()=user_id) with check(auth.uid()=user_id);
+drop policy if exists errors_own on public.student_errors; create policy errors_own on public.student_errors for all using(auth.uid()=user_id) with check(auth.uid()=user_id);
+drop policy if exists sims_own on public.student_simulations; create policy sims_own on public.student_simulations for all using(auth.uid()=user_id) with check(auth.uid()=user_id);
+drop policy if exists sync_own on public.sync_state; create policy sync_own on public.sync_state for all using(auth.uid()=user_id) with check(auth.uid()=user_id);
+drop policy if exists devices_own on public.user_devices; create policy devices_own on public.user_devices for all using(auth.uid()=user_id) with check(auth.uid()=user_id);
