@@ -1,15 +1,11 @@
-# PPA ANAC 95+ — V11 Login Corrigido
+# PPA ANAC 95+ — V12 Aberta
 
-Correção do login: a configuração pública do Supabase agora fica diretamente no
-index.html, eliminando a dependência do carregamento de config.js para iniciar a
-autenticação. O config.js permanece incluído para compatibilidade.
+Versão simplificada: a aplicação abre diretamente, sem nome de utilizador, palavra-passe ou ecrã de login.
 
-Também foi criada uma nova versão de cache do Service Worker.
+- Progresso local no dispositivo (modo guest).
+- Funciona offline depois de carregada/cached.
+- O conteúdo de estudo e os bancos de perguntas permanecem na aplicação.
+- A autenticação/Supabase não é necessária para utilizar a aplicação.
+- Esta versão não oferece separação de resultados por conta nem sincronização cloud.
 
-Recuperação offline:
-- disponível para dispositivos previamente autorizados;
-- utiliza o código de recuperação local;
-- altera a palavra-passe local do dispositivo;
-- alteração da palavra-passe no servidor exige Internet.
-
-Substitua os ficheiros existentes pelos deste pacote e faça um único commit na main.
+Substitua os ficheiros existentes no GitHub Pages por este pacote e faça um único commit na branch `main`.
