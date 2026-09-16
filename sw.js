@@ -1,5 +1,5 @@
-const C='ppa-anac-v10-recovery';
-const ASSETS=['./','./index.html','./config.js?v=10','./manifest.json','./sw.js','./ejsplash.png'];
+const C='ppa-anac-v11-login';
+const ASSETS=['./','./index.html','./config.js?v=11','./manifest.json','./sw.js','./ejsplash.png'];
 
 self.addEventListener('install',e=>{
   e.waitUntil(caches.open(C).then(c=>c.addAll(ASSETS)).then(()=>self.skipWaiting()));

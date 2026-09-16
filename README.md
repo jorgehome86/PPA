@@ -1,15 +1,15 @@
-# PPA ANAC 95+ — V10 Recuperação Offline
+# PPA ANAC 95+ — V11 Login Corrigido
 
-Versão baseada no V8/V9 real da aplicação, com recuperação offline reforçada.
+Correção do login: a configuração pública do Supabase agora fica diretamente no
+index.html, eliminando a dependência do carregamento de config.js para iniciar a
+autenticação. O config.js permanece incluído para compatibilidade.
 
-## Recuperação offline
-- O dispositivo precisa ter sido autorizado previamente, após um login online bem-sucedido.
-- A aplicação gera um código de recuperação e guarda apenas o seu hash localmente.
-- O código deve ser guardado fora do telefone.
-- Sem Internet, o código permite redefinir a palavra-passe **local daquele dispositivo**.
-- A recuperação offline não altera a palavra-passe do servidor Supabase; isso exige Internet.
-- Depois de uma recuperação offline, a aplicação marca que a palavra-passe local pode ser diferente da palavra-passe online.
+Também foi criada uma nova versão de cache do Service Worker.
 
-## Publicação
-Substitua os ficheiros do repositório pelos ficheiros deste pacote e faça um único commit na branch main.
-Não coloque nenhuma chave secret/service_role no frontend.
+Recuperação offline:
+- disponível para dispositivos previamente autorizados;
+- utiliza o código de recuperação local;
+- altera a palavra-passe local do dispositivo;
+- alteração da palavra-passe no servidor exige Internet.
+
+Substitua os ficheiros existentes pelos deste pacote e faça um único commit na main.
