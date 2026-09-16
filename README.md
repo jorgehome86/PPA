@@ -1,14 +1,11 @@
-# PPA ANAC 95+ — V3
-Aplicação web/PWA offline.
+# PPA ANAC 95+ — V8 corrigida
 
-Inclui:
-- 50 diagnóstico 95%+
-- 50 memorização progressiva
-- níveis: Memorização, Fácil, Médio, Difícil, Inspector da ANAC, INVA, Astronauta, Cientista, Deus
-- 50 validação 95%+
-- caderno de erros
-- progresso local
-- estrutura de cronómetro para simulados finais
-- sem Parent Dashboard
+Pacote atualizado para GitHub Pages.
 
-Nota: o banco de perguntas incorporado é o banco de treino existente na versão anterior; a integração integral e capítulo-específica de todo o material digitalizado continuará a ser uma etapa de curadoria/geração de questões.
+Correções:
+- Service Worker com cache versionado novo.
+- config.js com cache-busting.
+- Login continua usando a Edge Function `login-with-username`.
+- Não contém a chave secreta/service_role.
+
+Substitua os ficheiros existentes pelos ficheiros deste pacote e faça commit na branch main.
