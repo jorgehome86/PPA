@@ -1,11 +1,15 @@
-# PPA ANAC 95+ — V8 corrigida
+# PPA ANAC 95+ — V10 Recuperação Offline
 
-Pacote atualizado para GitHub Pages.
+Versão baseada no V8/V9 real da aplicação, com recuperação offline reforçada.
 
-Correções:
-- Service Worker com cache versionado novo.
-- config.js com cache-busting.
-- Login continua usando a Edge Function `login-with-username`.
-- Não contém a chave secreta/service_role.
+## Recuperação offline
+- O dispositivo precisa ter sido autorizado previamente, após um login online bem-sucedido.
+- A aplicação gera um código de recuperação e guarda apenas o seu hash localmente.
+- O código deve ser guardado fora do telefone.
+- Sem Internet, o código permite redefinir a palavra-passe **local daquele dispositivo**.
+- A recuperação offline não altera a palavra-passe do servidor Supabase; isso exige Internet.
+- Depois de uma recuperação offline, a aplicação marca que a palavra-passe local pode ser diferente da palavra-passe online.
 
-Substitua os ficheiros existentes pelos ficheiros deste pacote e faça commit na branch main.
+## Publicação
+Substitua os ficheiros do repositório pelos ficheiros deste pacote e faça um único commit na branch main.
+Não coloque nenhuma chave secret/service_role no frontend.
