@@ -1,12 +1,9 @@
-# PPA ANAC 95+ — VERSÃO COMPLETA
+# PPA ANAC 95+ — Nova Offline
 
-Inclui: mapa de matérias/capítulos, conteúdo de estudo, esquemas visuais offline, leitura em voz alta offline, pesquisa de vídeos online, 50 memorização + 50 validação, regra 95%+, progressão por capítulo, caderno de erros, cálculos desbloqueáveis por matéria (estrutura), simulados, modo reta final, calendário, export/import, PWA offline e sincronização Supabase.
+PWA sem login, offline-first. Inclui banco local legado de 1.240 registos, simulados, progresso, backup/importação, armazenamento local de materiais, modo voo e METAR com cache explícito.
 
 ## Importante
-O banco incorporado contém 1.240 questões de treino fornecidas no projeto (1.000 normais + 240 cálculos). Elas não são questões oficiais da ANAC. A fonte/explicação é mantida quando existente.
+A geração realmente inédita por IA ainda requer configurar um endpoint seguro no servidor. Esta build não inclui chaves secretas. O botão Gerar funciona offline montando sessões a partir do banco local.
 
-## Cloud
-O frontend usa a publishable key do Supabase. A secret/service key permanece apenas na Edge Function. Publique `supabase/functions/login-with-username/index.ts` como a função `login-with-username` e mantenha JWT verification desligada se a função for pública e fizer a própria autenticação.
-
-## GitHub Pages
-Suba o conteúdo da pasta para a raiz do repositório `jorgehome86/PPA`, branch `main`.
+## Publicação
+Publique todos os ficheiros juntos na raiz do GitHub Pages. Após abrir uma vez online, o Service Worker guarda o shell e o banco local para uso offline.

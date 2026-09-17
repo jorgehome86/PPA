@@ -1,10 +1,15 @@
 {
-  "name":"PPA ANAC 95+ — EJ Escola de Pilotagem",
-  "short_name":"PPA ANAC 95+",
-  "start_url":"./index.html",
-  "display":"standalone",
-  "background_color":"#04111d",
-  "theme_color":"#061524",
-  "lang":"pt-PT",
-  "icons":[{"src":"ejsplash.png","sizes":"512x512","type":"image/png","purpose":"any maskable"}]
+  "name": "PPA ANAC 95+ — AI Flight Academy",
+  "short_name": "PPA 95+",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#03101b",
+  "theme_color": "#071c2c",
+  "icons": [
+    {
+      "src": "icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
 }
