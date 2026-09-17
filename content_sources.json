@@ -1,0 +1,11 @@
+{
+  "version": 9,
+  "policy": "Legacy training questions remain practice-only. Source-located, source-inspected and source-grounded are separate statuses. No third-party book is reproduced wholesale.",
+  "sources": [
+    {"subject":"CT","chapters":"1-17","status":"source_located","source":"Conhecimentos Técnicos - Aviões, seção Piloto Privado","note":"Sumário PPA identificado; não reproduzir a obra integralmente."},
+    {"subject":"REG","chapters":"14-20 + project materials 6-9","status":"source_located","source":"Arquivos REG do acervo + materiais fornecidos anteriormente"},
+    {"subject":"NAV","chapters":"5-11","status":"source_located","source":"Arquivos NAV do acervo","fully_inspected":[10],"new_original_grounded_questions":{"10":20}},
+    {"subject":"MET","chapters":"1-9","status":"source_located","source":"Arquivos MET do acervo","fully_inspected":[1],"new_original_grounded_questions":{"1":20}},
+    {"subject":"TV","chapters":"11-19","status":"source_located_pending_reconciliation","source":"Arquivos TV do acervo","note":"Arquivos TV 20-24 também existem; não foram incorporados ao currículo PPA sem reconciliação."}
+  ]
+}

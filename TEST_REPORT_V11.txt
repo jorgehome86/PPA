@@ -1,0 +1,38 @@
+PPA ANAC 95+ — V11 LEARNING ACADEMY
+Build audit: 2026-09-17
+
+ESCOPO DESTA BUILD
+- Aplicação de aprendizagem PPA/VFR.
+- Nenhuma integração com X-Plane/simulador externo foi implementada.
+- Adicionados: ATC/Fonia VFR didática, Emergências & ADM, Biblioteca & Materiais, Configurações locais e impressão/guardar PDF do Briefing.
+- Preservados os módulos anteriores da V10.
+
+TESTES EXECUTADOS NESTE AMBIENTE
+PASS — node --check app.js
+PASS — Python py_compile scripts/build_metar_feed.py e build_taf_feed.py
+PASS — runtime harness local: 37/37 diagnósticos
+PASS — regra 95%: 47/50 reprova; 48/50 aprova
+PASS — sessões Memorização/Validação de 50
+PASS — preservação do gabarito nas variações
+PASS — VOR recíprocos e NDB bearings do banco programático
+PASS — prova completa: banco suficiente para 20 por matéria
+PASS — 31 telas encontradas
+PASS — 0 IDs HTML duplicados
+PASS — 0 destinos data-go ausentes
+PASS — 44 ações UI; 0 handlers ausentes na tabela de ações
+PASS — 18 recursos declarados no Service Worker; 0 ausentes
+PASS — nenhum token de conector/telemetria de simulador externo
+PASS — servidor HTTP local retornou 200 para index.html, app.js, manifest.json e sw.js
+
+LIMITAÇÕES / NÃO MARCADO COMO 100% E2E
+- Safari real em iPhone/iPad não foi automatizado neste ambiente.
+- GitHub Pages e GitHub Actions não foram publicados/executados nesta auditoria.
+- Serviços externos (METAR/TAF/SIGMET/cartas/REDEMET/AISWEB) dependem de rede, fonte e publicação.
+- Reconhecimento de voz depende do suporte/permissões do navegador.
+- Todos os PDFs do curso ainda não estão integralmente indexados no Banco Mestre.
+- IA OpenAI online inédita ainda requer endpoint seguro; o gerador atual é local/adaptativo.
+- Cartas oficiais completas não são empacotadas automaticamente nesta build.
+- Performance operacional por aeronave específica requer POH/AFM e dados reais da aeronave.
+
+CONCLUSÃO
+A build passou nos testes locais/estruturais acima. Não é correto declarar 100% de funcionamento de serviços online ou de Safari/iOS antes do teste publicado em dispositivos reais.

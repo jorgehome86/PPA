@@ -1,0 +1,14 @@
+{
+  "version": 9,
+  "generatedAt": "2026-09-17",
+  "principle": "Fonte localizada não significa conteúdo integralmente indexado. O app distingue localização, indexação e validação.",
+  "coverage": {
+    "CT": {"located": [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17], "basis": "Sumário da seção Piloto Privado do material Bianch localizado no acervo"},
+    "MET": {"located": [1,2,3,4,5,6,7,8,9], "basis": "Arquivos MET cap 1–9 localizados no acervo; MET 1 inspecionado integralmente nesta versão"},
+    "NAV": {"located": [5,6,7,8,9,10,11], "basis": "Arquivos NAV 5–11 localizados no acervo; NAV 10 inspecionado integralmente nesta versão"},
+    "REG": {"located": [14,15,16,17,18,19,20], "basis": "Arquivos REG 14–20 localizados no acervo; capítulos 6–9 também possuem conteúdo previamente fornecido no projeto"},
+    "TV": {"located": [11,12,13,14,15,16,17,18,19], "basis": "Arquivos TV 11–19 localizados no acervo; existem arquivos adicionais TV 20–24, mas o currículo PPA ainda precisa ser reconciliado antes de incorporá-los"}
+  },
+  "fullyInspectedForV9": ["MET 1", "NAV 10"],
+  "newSourceGroundedQuestions": {"MET1": 20, "NAV10": 20}
+}
