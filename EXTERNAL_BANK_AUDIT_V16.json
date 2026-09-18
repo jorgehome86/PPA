@@ -1,0 +1,13 @@
+{
+  "version": 16,
+  "checkedAt": "2026-09-18",
+  "source": "https://hangarmma.com.br/blog/simulado-anac-aerodinamica/",
+  "sourceTitle": "SIMULADO BANCA ANAC AERODINÂMICA",
+  "sourceDeclaredAudience": "Mecânico de Manutenção Aeronáutica (MMA)",
+  "ppaSubject": "TV — Teoria de Voo",
+  "importedOriginalQuestions": 22,
+  "copyPolicy": "Enunciados e alternativas foram redigidos originalmente; não há cópia literal do simulado da página.",
+  "defaultPpaPolicy": "Somente conceitos de asa fixa compatíveis com PPA foram incluídos.",
+  "excludedFromDefault": ["helicóptero", "manutenção específica de MMA", "conteúdo de alta velocidade fora do foco PPA"],
+  "officialStatus": "A fonte é externa; a alegação de questões que apareceram em provas é da própria página e não foi tratada como confirmação oficial da ANAC."
+}

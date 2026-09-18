@@ -1,0 +1,251 @@
+{
+  "version": "V15",
+  "fileCount": 49,
+  "files": [
+    {
+      "path": ".github/workflows/refresh-offline-data.yml",
+      "bytes": 885,
+      "sha256": "bff150e938d12051b4f717cd2a13030ca718f5c17366d9d4c6382cc71e5e3e08"
+    },
+    {
+      "path": ".github/workflows/update-weather.yml",
+      "bytes": 1227,
+      "sha256": "3a959fa952b79f8b0489177ce2009684036568c5593ca9a4410cf3d697b42710"
+    },
+    {
+      "path": ".github/workflows/update-winds.yml",
+      "bytes": 3011,
+      "sha256": "74095dfc25c45f9060b51e376f1d50d64558db24cbcc601593590c4b29fc00b1"
+    },
+    {
+      "path": "BOOK_BANK_AUDIT_V15.json",
+      "bytes": 1041,
+      "sha256": "f47bf64cd2e9557cad035e595c14237f88e2fa5f21536122ab621da6a917e0fc"
+    },
+    {
+      "path": "DATA_ARCHITECTURE_V12.md",
+      "bytes": 2093,
+      "sha256": "01a52dc2425cb118ded433ac661c06819f7a89a48a1290bd0c40b12b8839b4c6"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1339,
+      "sha256": "9d1510374b90712716ed7fa23bd94ed95208c6a39b4a66117258a20a4fe3fa84"
+    },
+    {
+      "path": "README_V15.md",
+      "bytes": 1581,
+      "sha256": "bbe1328f8d92fc439eb231e9c48b016183be4caaf92ae7c835edb0271d86aa7c"
+    },
+    {
+      "path": "TEST_REPORT_V12.txt",
+      "bytes": 2154,
+      "sha256": "59e06c276bec97973948f56a5a26d42666edfd860323cdb0d5939e8eb6c66f68"
+    },
+    {
+      "path": "TEST_REPORT_V13.json",
+      "bytes": 1434,
+      "sha256": "a1af1e2e0cc858483612c632a151039847298a431ba925221df086bbf1408bdf"
+    },
+    {
+      "path": "TEST_REPORT_V14.json",
+      "bytes": 1466,
+      "sha256": "76d5f529f90e5cae5b4969a8f40f7eb9e5b67ab2e2d0065babbd3e7ef3fb7b16"
+    },
+    {
+      "path": "TEST_RUNTIME_V12.json",
+      "bytes": 2615,
+      "sha256": "8f5ed2cd4769921dd9c995ee24a8e7ae9eda5e9392442d4ba4bf01ad375c584d"
+    },
+    {
+      "path": "TEST_RUNTIME_V15.json",
+      "bytes": 2023,
+      "sha256": "8687ebd761788f39f33738febfac5f98fd68d51cbd13548e66416ce3ca06c7ff"
+    },
+    {
+      "path": "app.css",
+      "bytes": 12522,
+      "sha256": "6f8b018cb4f2527c4d933fbdf4c4a3916c0a820886a24419479deaa8110f588f"
+    },
+    {
+      "path": "app.js",
+      "bytes": 120219,
+      "sha256": "9ae9802d244f161865d1463d34d9f397fc774fb77f89455eef2f8060f3269925"
+    },
+    {
+      "path": "book_bank.js",
+      "bytes": 2035723,
+      "sha256": "5164b3a3f81cb1fa7a4262aa443f91c0e652a5254d95a19cb9fdebc7173abc1d"
+    },
+    {
+      "path": "books/CT_Conhecimentos_Tecnicos.pdf",
+      "bytes": 17725662,
+      "sha256": "338b2c86fac0b6ad68de1ef4730a3b9c1a01c4fc4d629eb14cd378b4104553ab"
+    },
+    {
+      "path": "books/MET_Meteorologia.pdf",
+      "bytes": 14296836,
+      "sha256": "2d4907203a7d6e70cd119d47b0ab943d245616698c6416cab9abec983a1116ee"
+    },
+    {
+      "path": "books/NAV_Navegacao_Visual.pdf",
+      "bytes": 15511561,
+      "sha256": "4cd7a5388a0c161d649caf83c62e33339c7c950368303cb38622272690005342"
+    },
+    {
+      "path": "books/REG_Regulamentos_VFR_IFR.pdf",
+      "bytes": 14065499,
+      "sha256": "2e036a58e5d654760e104e1bb8259d414d75ff01e493fbc065b629ddb97f5e6f"
+    },
+    {
+      "path": "books/TV_Teoria_de_Voo.pdf",
+      "bytes": 9619660,
+      "sha256": "c04b0a86af1ad0a368530bcf070f8b84b33ebaa5d7d90d3db8e1dec6cd8f7d13"
+    },
+    {
+      "path": "content_sources.json",
+      "bytes": 1157,
+      "sha256": "58eef6c7cbd30ba44a6b7ede0a48521b98e7aef42a31ffbe9b26f6b4ba6ba0e2"
+    },
+    {
+      "path": "data.js",
+      "bytes": 662736,
+      "sha256": "2ef074e3c8a370f3389fb1fe5ea24ac3ce408b72511ec9b018ef55f5e5d06f49"
+    },
+    {
+      "path": "icon.png",
+      "bytes": 68179,
+      "sha256": "e3c4ae6fc86bae144d0ea6ca743fd26f18b8c21c85b8dc6b99302564984f91cf"
+    },
+    {
+      "path": "index.html",
+      "bytes": 47912,
+      "sha256": "9863936025e9a1f8c16cc14772d469b2609a78f2c44e5a2a2274f770b551439e"
+    },
+    {
+      "path": "manifest.json",
+      "bytes": 311,
+      "sha256": "85732e789b4876dd78bdf1971f983f71e92baf010f2e1b4fe031d9214eb5ef62"
+    },
+    {
+      "path": "offline/catalog.json",
+      "bytes": 314,
+      "sha256": "38c4f38feb1090ed5ebb921e821668cd0371d0709f9845e317b4c5b2b8f06809"
+    },
+    {
+      "path": "offline_db.js",
+      "bytes": 1894,
+      "sha256": "6f9fb3527c0aa6e583f2733bcb37e4d9fb7552b2c7c61cd76d41eb151bd6b039"
+    },
+    {
+      "path": "scripts/__pycache__/build_aisweb_catalog.cpython-313.pyc",
+      "bytes": 8046,
+      "sha256": "090ad9c8faa662f98546d79daca757d1ae0635d957e6a00eb678fc46f6531b29"
+    },
+    {
+      "path": "scripts/__pycache__/build_metar_feed.cpython-313.pyc",
+      "bytes": 2518,
+      "sha256": "3e2af9ecfd6d2572001d8f25a03f98d39d705d930952a9cb7c414ad11855c3db"
+    },
+    {
+      "path": "scripts/__pycache__/build_taf_feed.cpython-313.pyc",
+      "bytes": 2330,
+      "sha256": "aa5ab44233434a981f98d0b17c6b71346f92e0ab541dbf14a96c3677838a2390"
+    },
+    {
+      "path": "scripts/build_aisweb_catalog.py",
+      "bytes": 3966,
+      "sha256": "217a8369cc49ad043a3d0b2f21aa7e428b8fc9cbe01943d2c37d40218d089585"
+    },
+    {
+      "path": "scripts/build_metar_feed.py",
+      "bytes": 1130,
+      "sha256": "a09e3359fa4ec8bca6bbb7597fc80bf9e27078a42f479cb968ca1e6f53d47150"
+    },
+    {
+      "path": "scripts/build_taf_feed.py",
+      "bytes": 1002,
+      "sha256": "265fae75ccbb1492dccd0a8900b362e9c41dde1da71077a0eff1d2ff2623693c"
+    },
+    {
+      "path": "scripts/sync_weather.sh",
+      "bytes": 428,
+      "sha256": "81ec8f7879ba2364d5fafc89911a90a13da65023b1c2949f8ea3cfc0b1fb39c5"
+    },
+    {
+      "path": "source_catalog.json",
+      "bytes": 1172,
+      "sha256": "152e814962c80881e2750878da3c738a71f340e0f0c6bb0929b0fda44c2e8057"
+    },
+    {
+      "path": "source_grounded.js",
+      "bytes": 17397,
+      "sha256": "a9146d0957d8f10072d7d175c449488d5e3e1c1f0d72f60d3089d38cc98d7e34"
+    },
+    {
+      "path": "sw.js",
+      "bytes": 1226,
+      "sha256": "9bebd3fcd5f84c32cccaf9151057c8a379e0f15333d91e4532a259e9c9b893af"
+    },
+    {
+      "path": "sync_manager.js",
+      "bytes": 6120,
+      "sha256": "310009654c263bfdd4f6b35014d6827e8b576ea2bbe2003b7d91e045bbc3068f"
+    },
+    {
+      "path": "test_v14_runtime.js",
+      "bytes": 3057,
+      "sha256": "139145ea709e0eaff160c7e95c35cbe70ed3b7aa1bcd0b11c8cc4128e118bab1"
+    },
+    {
+      "path": "test_v15_runtime.js",
+      "bytes": 3614,
+      "sha256": "67af3830ab0fb2a65d0d869c536837d1c802ab44f3b4058a4fd03f37203cdceb"
+    },
+    {
+      "path": "weather/clouds_latest.png",
+      "bytes": 11091,
+      "sha256": "0f03e1cf23c7690a44881920d21b250572a6434bd4de39992dc4e7a8a2e05b46"
+    },
+    {
+      "path": "weather/metars.json",
+      "bytes": 86,
+      "sha256": "5d9a5029de00853467898ed4aa4a9297dd529dfd5d70939c7c03b531bc9ef3fc"
+    },
+    {
+      "path": "weather/storms_latest.png",
+      "bytes": 11214,
+      "sha256": "d6f79595047da51c7a250a223fc5696946553b7cb1820d0455a32b72dba62138"
+    },
+    {
+      "path": "weather/tafs.json",
+      "bytes": 84,
+      "sha256": "f61e0c85f1de3099ad06cf76bda623a77084ae2eb3ec3a42655f2501bcb9ebfc"
+    },
+    {
+      "path": "weather/temperature_latest.png",
+      "bytes": 10545,
+      "sha256": "96b33fe017d693c830c6b5664089009e31ddc388c542af09babaf7eae5c4792a"
+    },
+    {
+      "path": "weather/visibility_latest.png",
+      "bytes": 10706,
+      "sha256": "ef3b28c6e9398c59e4a63ee0987cceab2344f8e1b1f521150cc2ec3bd020b24f"
+    },
+    {
+      "path": "weather/weather_products.json",
+      "bytes": 524,
+      "sha256": "38a4e07f2f441e28a6aae8953591f946c1e9c4a652c09ffc4592161a68e4df88"
+    },
+    {
+      "path": "weather/winds_latest.png",
+      "bytes": 9843,
+      "sha256": "39d4c188f469f6426789c9f06cc5939561e0ae00e8f6cf6eaae1324d67946cbd"
+    },
+    {
+      "path": "weather/winds_meta.json",
+      "bytes": 62,
+      "sha256": "52e710a07dc41ca1602beb9e80553cd341b031ec50848f10d9bf797885c04aaa"
+    }
+  ]
+}

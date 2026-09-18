@@ -1,0 +1,42 @@
+PPA ANAC 95+ — V12 OFFLINE DATA ACADEMY
+Build date: 2026-09-17
+
+VERIFIED LOCALLY
+- app.js syntax: PASS
+- offline_db.js syntax: PASS
+- sync_manager.js syntax: PASS
+- source_grounded.js syntax: PASS
+- Python METAR/TAF/AISWEB scripts compile: PASS
+- GitHub Actions workflow YAML parse: PASS
+- Runtime harness: PASS
+- Runtime diagnostics: 39/39 PASS
+- State/backup schema: 12
+- HTML screens: 32
+- Missing data-go destinations: 0
+- Duplicate HTML IDs: 0
+- Service Worker declared local assets: 21; missing: 0
+- AISWEB parser fixture: PASS; public/Ostensivo kept, Exclusive rejected, AMDT/effective date parsed
+- Local HTTP smoke: 9/9 HTTP 200
+- ZIP integrity: PASS
+
+NEW V12 DATA RULES IMPLEMENTED
+- IndexedDB product database for weather/charts
+- Stable active records; IndexedDB put transaction replaces only after successful fetch/blob validation
+- Failed chart update keeps previous record
+- Same AMDT/effective date is skipped instead of redownloaded
+- Charts withdrawn from a successfully loaded catalog are removed during reconciliation
+- METAR/TAF query stores the obtained product in IndexedDB in addition to legacy local cache
+- Offline METAR/TAF fallback reads IndexedDB
+- Storage Persistence request when supported
+- Offline Center UI with counts, bytes, catalog and synchronization status
+- Server-side AWC feed refresh scripts and scheduled GitHub Actions workflow
+- Server-side AISWEB catalog builder that refuses to invent download links
+- No X-Plane/simulator connection
+
+EXTERNAL TESTS NOT PASSED / NOT CLAIMED
+- Live AWC download from this build container: NOT TESTED successfully; container DNS could not resolve aviationweather.gov.
+- Live AISWEB parser/download from this build container: NOT TESTED successfully for the same network limitation.
+- GitHub Actions deployment: NOT EXECUTED.
+- Safari/iPhone/iPad end-to-end: NOT EXECUTED.
+- Complete offline copy of every AISWEB chart: NOT PRESENT in this ZIP. The local database/versioning engine is implemented; the official catalog/mirror still has to be populated in deployment.
+- Chromium headless end-to-end: attempted but Chromium did not complete in this container; no pass claim.

@@ -1,0 +1,92 @@
+{
+  "raw": 1240,
+  "dedup": 280,
+  "sourceQ": 40,
+  "met1Source": 20,
+  "nav10Source": 20,
+  "noChapter0": true,
+  "nav10Pool": 69,
+  "met1Pool": 24,
+  "mem50": 50,
+  "val50": 50,
+  "pass47": false,
+  "pass48": true,
+  "briefingFn": true,
+  "visualFn": true,
+  "flightFn": true,
+  "invaFn": true,
+  "atcFn": true,
+  "emergencyFn": true,
+  "schema": 13,
+  "plannerDistinct": true,
+  "diag": [
+    [
+      "Banco bruto carregado",
+      true
+    ],
+    [
+      "Banco deduplicado 280",
+      true
+    ],
+    [
+      "Sem duplicados exatos no banco-base",
+      true
+    ],
+    [
+      "Nenhuma questão-base permanece no capítulo 0",
+      true
+    ],
+    [
+      "CT capítulos 1–17 identificados na fonte",
+      true
+    ],
+    [
+      "Cinco matérias com conteúdo",
+      true
+    ],
+    [
+      "Sessão 50 Memorização",
+      true
+    ],
+    [
+      "Sessão 50 Validação",
+      true
+    ],
+    [
+      "Regra 95%: 47/50 reprova",
+      true
+    ],
+    [
+      "Regra 95%: 48/50 aprova",
+      true
+    ],
+    [
+      "Prova completa 100",
+      true
+    ],
+    [
+      "Modo Banca sem feedback imediato",
+      true
+    ],
+    [
+      "Retenção 1/3/7/14 dias",
+      true
+    ],
+    [
+      "Backup schema V13 + materiais",
+      true
+    ],
+    [
+      "Banco offline",
+      true
+    ],
+    [
+      "Sincronização offline",
+      true
+    ],
+    [
+      "Sem conexão a simulador externo",
+      true
+    ]
+  ]
+}

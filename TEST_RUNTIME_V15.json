@@ -1,0 +1,129 @@
+{
+  "raw": 1240,
+  "dedup": 280,
+  "sourceQ": 40,
+  "met1Source": 20,
+  "nav10Source": 20,
+  "noChapter0": true,
+  "nav10Pool": 79,
+  "met1Pool": 24,
+  "mem50": 50,
+  "val50": 50,
+  "pass47": false,
+  "pass48": true,
+  "briefingFn": true,
+  "visualFn": true,
+  "flightFn": true,
+  "invaFn": true,
+  "atcFn": true,
+  "emergencyFn": true,
+  "schema": 15,
+  "bookDirect": 1135,
+  "bookDerived": 1383,
+  "bookCalc": 120,
+  "bookDupOk": true,
+  "poolDupOk": true,
+  "plannerDistinct": true,
+  "diag": [
+    [
+      "Banco bruto carregado",
+      true
+    ],
+    [
+      "Banco deduplicado 280",
+      true
+    ],
+    [
+      "Sem duplicados exatos no banco-base",
+      true
+    ],
+    [
+      "Nenhuma questão-base permanece no capítulo 0",
+      true
+    ],
+    [
+      "Cinco matérias com conteúdo",
+      true
+    ],
+    [
+      "Sessão 50 Memorização",
+      true
+    ],
+    [
+      "Sessão 50 Validação",
+      true
+    ],
+    [
+      "Regra 95%: 47/50 reprova",
+      true
+    ],
+    [
+      "Regra 95%: 48/50 aprova",
+      true
+    ],
+    [
+      "Prova completa 100",
+      true
+    ],
+    [
+      "Modo Banca sem feedback imediato",
+      true
+    ],
+    [
+      "Retenção 1/3/7/14 dias",
+      true
+    ],
+    [
+      "Backup schema V15 + materiais",
+      true
+    ],
+    [
+      "METAR/TAF completo no banco",
+      true
+    ],
+    [
+      "Cartas com troca atómica",
+      true
+    ],
+    [
+      "Acesso direto offline",
+      true
+    ],
+    [
+      "Banco offline",
+      true
+    ],
+    [
+      "Sincronização offline",
+      true
+    ],
+    [
+      "Banco direto dos 5 livros",
+      true
+    ],
+    [
+      "Gabaritos dos 5 livros conferidos",
+      true
+    ],
+    [
+      "Sem duplicados exatos no banco dos livros",
+      true
+    ],
+    [
+      "Filtro global de repetição ativo",
+      true
+    ],
+    [
+      "Banco frase-a-frase ativo",
+      true
+    ],
+    [
+      "Cálculos com resolução passo a passo",
+      true
+    ],
+    [
+      "Perfis separados",
+      true
+    ]
+  ]
+}

@@ -1,0 +1,180 @@
+{
+  "raw": 1240,
+  "dedup": 280,
+  "sourceQ": 40,
+  "met1Source": 20,
+  "nav10Source": 20,
+  "noChapter0": true,
+  "nav10Pool": 69,
+  "met1Pool": 24,
+  "mem50": 50,
+  "val50": 50,
+  "pass47": false,
+  "pass48": true,
+  "briefingFn": true,
+  "visualFn": true,
+  "flightFn": true,
+  "invaFn": true,
+  "atcFn": true,
+  "emergencyFn": true,
+  "schema": 12,
+  "plannerDistinct": true,
+  "diag": [
+    [
+      "Banco bruto carregado",
+      true
+    ],
+    [
+      "Banco deduplicado 280",
+      true
+    ],
+    [
+      "Sem duplicados exatos no banco-base",
+      true
+    ],
+    [
+      "Nenhuma questão-base permanece no capítulo 0",
+      true
+    ],
+    [
+      "CT capítulos 1–17 identificados na fonte",
+      true
+    ],
+    [
+      "Cinco matérias com conteúdo",
+      true
+    ],
+    [
+      "Currículo NAV 11 + aula extra",
+      true
+    ],
+    [
+      "NAV 10 possui radionavegação",
+      true
+    ],
+    [
+      "NAV 11 possui Plano de Voo",
+      true
+    ],
+    [
+      "Aula Extra possui Noturno/ILS",
+      true
+    ],
+    [
+      "Sessão 50 Memorização",
+      true
+    ],
+    [
+      "Sessão 50 Validação",
+      true
+    ],
+    [
+      "Gabarito preservado nas variações",
+      true
+    ],
+    [
+      "Regra 95%: 47/50 reprova",
+      true
+    ],
+    [
+      "Regra 95%: 48/50 aprova",
+      true
+    ],
+    [
+      "Prova completa 100",
+      true
+    ],
+    [
+      "VOR recíprocos verificados",
+      true
+    ],
+    [
+      "NDB bearing verificado",
+      true
+    ],
+    [
+      "FPL",
+      true
+    ],
+    [
+      "Peso e balanceamento",
+      true
+    ],
+    [
+      "Carta de ventos",
+      true
+    ],
+    [
+      "METEO UI",
+      true
+    ],
+    [
+      "METEO exige feed + hora do produto",
+      true
+    ],
+    [
+      "Planner adaptativo completo",
+      true
+    ],
+    [
+      "Backup schema V12 + materiais",
+      true
+    ],
+    [
+      "Flight Pack",
+      true
+    ],
+    [
+      "Banco fonte MET1",
+      true
+    ],
+    [
+      "Banco fonte NAV10",
+      true
+    ],
+    [
+      "Briefing VFR",
+      true
+    ],
+    [
+      "Treinador visual",
+      true
+    ],
+    [
+      "Treinador de voo",
+      true
+    ],
+    [
+      "INVA virtual",
+      true
+    ],
+    [
+      "ATC/Fonia didática",
+      true
+    ],
+    [
+      "Emergências & ADM",
+      true
+    ],
+    [
+      "Biblioteca local",
+      true
+    ],
+    [
+      "Configurações locais",
+      true
+    ],
+    [
+      "Banco offline V12",
+      true
+    ],
+    [
+      "Sincronização offline V12",
+      true
+    ],
+    [
+      "Sem conexão a simulador externo",
+      true
+    ]
+  ]
+}

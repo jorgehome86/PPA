@@ -1,0 +1,43 @@
+{
+  "version": "V15",
+  "direct_raw": 1139,
+  "direct_unique": 1135,
+  "duplicates_merged": 4,
+  "phrase_derived": 1383,
+  "calculation_resolved": 120,
+  "ppa_book_pool": 2638,
+  "ifr_extra": 100,
+  "calculation_direct": 210,
+  "per_book": {
+    "REG": {
+      "title": "Regulamentos de Tráfego Aéreo VFR e IFR",
+      "file": "books/REG_Regulamentos_VFR_IFR.pdf",
+      "direct": 214,
+      "derived": 146
+    },
+    "MET": {
+      "title": "Meteorologia para Piloto",
+      "file": "books/MET_Meteorologia.pdf",
+      "direct": 220,
+      "derived": 301
+    },
+    "NAV": {
+      "title": "Navegação Visual para Piloto Privado",
+      "file": "books/NAV_Navegacao_Visual.pdf",
+      "direct": 275,
+      "derived": 309
+    },
+    "TV": {
+      "title": "Teoria de Voo — Aviões",
+      "file": "books/TV_Teoria_de_Voo.pdf",
+      "direct": 210,
+      "derived": 227
+    },
+    "CT": {
+      "title": "Conhecimentos Técnicos",
+      "file": "books/CT_Conhecimentos_Tecnicos.pdf",
+      "direct": 220,
+      "derived": 400
+    }
+  }
+}
